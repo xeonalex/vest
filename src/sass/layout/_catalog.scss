@@ -17,25 +17,26 @@
 			opacity: 1;
 		}
 	}
+	#up-button{
+		opacity: .5;		
+		background: url('../img/icons/arrow-d.png') 50% no-repeat;
+		transform: rotate(180deg);
+		width: 43px;
+		height: 43px;
+		position: fixed;
+		z-index: 3;
+		bottom: 230px;
+		right: 40px;
+		transition: .25s;
+		&:hover{
+			opacity: 1;
+		}
+	}	
 	.container{
 		position: relative;
 		@include clearfix;
 		display: table;
-		#up-button{
-			opacity: .5;		
-			background: url('../img/icons/arrow-d.png') 50% no-repeat;
-			transform: rotate(180deg);
-			width: 43px;
-			height: 43px;
-			position: fixed;
-			z-index: 3;
-			bottom: 230px;
-			right: 40px;
-			transition: .25s;
-			&:hover{
-				opacity: 1;
-			}
-		}	
+
 	}
 	&-wrapper{
 		display: table-cell;
