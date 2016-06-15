@@ -21,6 +21,7 @@ $(document).ready(function(){
   	navText: [],
     loop: true,
   	autoplay:true,
+    mouseDrag: false
   });
 	// плавное появление
 	$(".carousel-wrap").css({'visibility': 'visible', 'opacity':'1' });

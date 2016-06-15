@@ -5,9 +5,64 @@
     visibility: hidden;
     @include opacity(0);
     @include transition(3s);
+    .container {
+    	position: relative;
+    }
+	.search-form{
+		top: 20px;
+		right: 20px;
+		z-index: 2;
+		display: inline-block;
+		position: absolute;
+		&:before{
+			position: absolute;
+			display: block;
+			content: '';
+			background: url('../img/icons/loop.png') center center no-repeat;
+			width: 28px;
+			height: 23px;
+			left: 20px;
+			top: 10px;
+			z-index: 1;
+		}
+	}
+	.search-form{
+		@include clearfix;
+		background: #fff;
+	    font-family: 'helveticaneuecyrthin';
+		@include box-shadow(inset 2px 2px 3px 0px rgba(4, 4, 4, 0.75));
+		.search-input{
+			padding: 10px 10px 9px 60px;
+			width: 370px;
+			float: left;
+			background: none;
+			border: none;
+			color: #747474;
+			font-size: 16px;
+			&:focus {
+				outline: 0;
+			}
+		}
+		.search-subm{
+			margin-top: 2px;
+			padding: 9px 10px 9px;
+			margin-left: -5px;
+			float: left;
+			font-size: 16px;
+			font-weight: 600;
+			background-image: -moz-linear-gradient( 0deg, rgb(205,206,206) 0%, rgb(255,255,255) 50%, rgb(234,233,233) 100%);
+			background-image: -webkit-linear-gradient( 0deg, rgb(205,206,206) 0%, rgb(255,255,255) 50%, rgb(234,233,233) 100%);
+			background-image: -ms-linear-gradient( 0deg, rgb(205,206,206) 0%, rgb(255,255,255) 50%, rgb(234,233,233) 100%);
+			background-image: linear-gradient( 0deg, rgb(205,206,206) 0%, rgb(255,255,255) 50%, rgb(234,233,233) 100%);
+			color: #901d34;
+		}
+	}
+
+
     .item {
     	position: relative;
     	min-height: 670px;
+    	text-align: center;
     	&:before{
     		display: inline-block;
     		content: '';
@@ -60,6 +115,8 @@
 	}
 
 	.slider-content-wrap {
+		text-align: left;
+		position: relative;
 		z-index: 1;
 		vertical-align: bottom;
 		display: inline-block;
@@ -82,12 +139,12 @@
 			    -webkit-text-stroke: 3px #fff;
 
 			}
-			margin-bottom: 40px;
+			margin-bottom: 85px;
 		}
 		.slider__content-nav{
 			.link{
 				display: inline-block;
-				padding: 13px 45px;
+				padding: 5px 30px 5px;
 				border: 2px solid #901d34;
 				font-family: 'nautilus_pompiliusregular';
 				font-size: 30px;

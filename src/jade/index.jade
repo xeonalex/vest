@@ -1,9 +1,11 @@
 extends _layout.jade
 block main
 	.carousel-wrap
-		form.search-block
-			input(type='text' name='search_query' placeholder='Введите артикул').search-input
-			button.search-subm(name='search_subm') Поиск
+		.container
+			.search-block
+				form.search-form
+					input(type='text' name='search_query' placeholder='Введите артикул').search-input
+					button.search-subm(name='search_subm') Поиск
 		div(class="carousel-main")
 			.item
 				img.slider-content_bg(src='img/slider/christmas.jpg')
