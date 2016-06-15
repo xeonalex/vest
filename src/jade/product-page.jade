@@ -12,7 +12,23 @@ block main
 						a.breadcrumbs__link.breadcrumbs__link_active(href="#") Платье макси с бисером, пряжкой на талии
 			.product__wrap
 				.product__gallery
-					.gallery__wrap
+					.product__gallery_img-wrapper
+						.product-status.new
+						.product__big-photo-wrap
+							.product__gallery_img
+								img.img(src='./img/product/img1.jpg')
+							.product__gallery_img
+								img.img(src='./img/product/img2.jpg')
+							.product__gallery_img
+								img.img(src='./img/product/img1.jpg')
+					.product__gallery-nav-bar
+						.product__gallery_preview
+							img.img(src='./img/product/img-prev1.jpg')
+						.product__gallery_preview
+							img.img(src='./img/product/img-prev2.jpg')
+						.product__gallery_preview
+							img.img(src='./img/product/img-prev2.jpg')
+
 				.product__content
 					.product__title
 						|Платье макси с бисером, пряжкой на талии
@@ -44,7 +60,7 @@ block main
 						.size-block
 							.size-title
 								.size-text
-									span.content-text Размер: 
+									span.content-text Размер:
 									span.size-value 40
 								.size-table
 									a(href="#").size-table__link Таблицы размеров

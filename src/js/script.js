@@ -12,6 +12,23 @@
       }
     });
   });
+// слайдер на странице товара
+ $('.product__big-photo-wrap').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.product__gallery-nav-bar'
+});
+$('.product__gallery-nav-bar').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  asNavFor: '.product__big-photo-wrap',
+  centerMode: false,
+  focusOnSelect: true
+});
+
+
 $(document).ready(function(){
 
 	// Слайдер на главной странице
@@ -26,4 +43,7 @@ $(document).ready(function(){
   });
 	// плавное появление
 	$(".carousel-wrap").css({'visibility': 'visible', 'opacity':'1' });
+
+
+
 });

@@ -1,11 +1,4 @@
-.carousel-wrap {
-	width: 100%;
-	margin: 0 auto;
-	position: relative;
-    visibility: hidden;
-    @include opacity(0);
-    @include transition(3s);
-    .container {
+    .container.search {
     	position: relative;
     }
 	.search-form{
@@ -58,6 +51,13 @@
 		}
 	}
 
+.carousel-wrap {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+    visibility: hidden;
+    @include opacity(0);
+    @include transition(3s);
 
     .item {
     	position: relative;
