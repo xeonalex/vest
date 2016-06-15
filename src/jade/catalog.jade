@@ -2,6 +2,8 @@ extends _layout.jade
 block main
 	section.catalog
 		.container
+			button#down-button
+			button#up-button
 			.catalog__left-side
 				h2.h2
 					| Коллекции
@@ -16,10 +18,6 @@ block main
 						a.catalog__menu-link(href="#")
 							| Весна-Лето 2016
 			.catalog__right-side
-				.catalog__form-wrap
-					label.catalog__form-label
-						input.catalog__form-text(type="text" placeholder="Введите артикул " required)
-					input.catalog__form-sbt(type="submit" value="Поиск")
 				.catalog__gallery-wrap
 					.catalog__gallery-item.bigger
 						img(src="img/model-1.jpg", alt="")

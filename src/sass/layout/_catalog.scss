@@ -3,59 +3,61 @@
 .catalog{
 	background: #f6f6f6;
 	min-height: 670px;
+	#down-button{
+		opacity: .5;
+		background: url('../img/icons/arrow-d.png') 50% no-repeat;
+		width: 43px;
+		height: 43px;
+		position: fixed;
+		z-index: 3;
+		bottom: 185px;
+		right: 40px;
+		transition: .25s;
+		&:hover{
+			opacity: 1;
+		}
+	}
 	.container{
 		position: relative;
 		@include clearfix;
+		display: table;
+		#up-button{
+			opacity: .5;		
+			background: url('../img/icons/arrow-d.png') 50% no-repeat;
+			transform: rotate(180deg);
+			width: 43px;
+			height: 43px;
+			position: fixed;
+			z-index: 3;
+			bottom: 230px;
+			right: 40px;
+			transition: .25s;
+			&:hover{
+				opacity: 1;
+			}
+		}	
+	}
+	&-wrapper{
+		display: table-cell;
 	}
 	&__left-side{
-		outline: 1px solid #000;
-		float: left;
+		vertical-align: top;
+		padding-top: 60px;
 		width: 235px;
 		color: $black;
 		background: #fff;
+		display: table-cell;
 		.h2{
 			padding-left: 20px;
 			font-family: 'helveticaneuecyrlight';
 			@include font-size(24px);
-			padding-top: 65px;
 			margin-bottom: 40px;
 		}
 	}
 	&__right-side{
 		position: relative;
-	}
-	&__form-wrap{
-		position: absolute;
-		z-index: 1;
-		right: 16px;
-		top: 8px;
-		.catalog__form-text{
-			float: left;
-			width: 370px;
-			padding: 7px 0 7px 45px;
-		}
-		.catalog__form-sbt{
-			width: 70px;
-			padding: 9px 0;
-		}
-		.catalog__form-text[placeholder]{
-			@include font-size(16px);
-			color: #747474;
-			font-family: 'helveticaneuecyrthin';
-		} 
-		.catalog__form-label{
-			float: left;
-			position: relative;
-			&:before{
-				content: '';
-				position: absolute;
-				background: url('../img/icons/loop.png') no-repeat;
-				width: 28px;
-				height: 23px;
-				top: 7px;
-				left: 10px;
-			}
-		}
+		width: 945px;
+		display: table-cell;
 	}
 	&__menu{
 		&-item{
@@ -70,7 +72,7 @@
 			font-weight: bold;
 			padding-left: 20px;
 			&--active{
-				color: $red;
+				color: $darkred;
 				position: relative;
 				&:before{
 					content: '';
@@ -87,19 +89,15 @@
 	}
 	&__gallery{
 		&-wrap{
-			// display: inline-block;
-			// text-align: justify;
 			display: flex;
 			flex-wrap: wrap;
 		    justify-content: space-between;
 			@include clearfix;
 			float: right;
 			width: 945px;
-			outline: 1px solid #000;
 			.bigger{
 				width: 399px;
 				height: 668px;
-				outline: 1px solid #000;
 			}
 			.small{
 				width: 259px;
@@ -107,7 +105,6 @@
 			}
 			.obertka{
 				text-align: center;
-				outline: 1px solid red;
 				width: 532px;
 				margin-bottom: 14px;
 				.catalog__gallery-item{
@@ -149,4 +146,3 @@
 		}
 	}
 }
-
