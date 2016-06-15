@@ -1,5 +1,10 @@
 extends _layout.jade
 block main
+	.container.search
+		.search-block
+			form.search-form
+				input(type='text' name='search_query' placeholder='Введите артикул').search-input
+				button.search-subm(name='search_subm') Поиск
 	section.catalog
 		.container
 			button#down-button
@@ -75,7 +80,7 @@ block main
 						.catalog__gallery-item.small
 							img(src="img/model-3.jpg", alt="")
 							span.gallery-item-num
-								| Арт. 239FU22					
+								| Арт. 239FU22
 						.catalog__gallery-item.small
 							img(src="img/model-2.jpg", alt="")
 							span.gallery-item-num

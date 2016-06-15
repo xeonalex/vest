@@ -1,16 +1,3 @@
-  $(function() {
-    $( "#spinner" ).spinner({
-      spin: function( event, ui ) {
-        if ( ui.value > 10 ) {
-          $( this ).spinner( "value", -10 );
-          return false;
-        } else if ( ui.value < -10 ) {
-          $( this ).spinner( "value", 10 );
-          return false;
-        }
-      }
-    });
-  });
 // слайдер на странице товара
  $('.product__big-photo-wrap').slick({
   slidesToShow: 1,
@@ -27,9 +14,43 @@ $('.product__gallery-nav-bar').slick({
   focusOnSelect: true
 });
 
-
 $(document).ready(function(){
+	$('.size-blocks__item').on('click', function(event) {
+		event.preventDefault();
+		if (!$(this).hasClass('active')) {
+			$('.size-blocks__item').each(function(index, el) {
+				$(this).removeClass('active')
+			});
+			$(this).addClass('active')
+		}
+	});
+  $('.color-block__item').on('click', function(event) {
+    event.preventDefault();
+    if (!$(this).hasClass('active')) {
+      $('.color-block__item').each(function(index, el) {
+        $(this).removeClass('active')
+      });
+      $(this).addClass('active')
+    }
+  });
+// Спиннер
+  $(function() {
+    $( "#spinner" ).spinner({
+    	min: 0
+    });
+  });
 
+$('.spinner input').on('focusout', function(){
+  var val=$(this).val();
+  if (val<'0') {$(this).val('0');
+  alert(1);};
+  if (Math.ceil(val) - val > 0) {$(this).val(parseInt(val, 10))};
+});
+
+// Вкладки
+  $(function() {
+		$( "#tabs" ).tabs();
+	});
 	// Слайдер на главной странице
 	$('.carousel-main').owlCarousel({
   	items: 1,
@@ -58,4 +79,12 @@ $(document).ready(function(){
         scrollTop: 0
       }, delay);
     });
+
+$('.take-call').on('click',function(){
+    $('.popup__make-call-wrap').bPopup({
+        closeClass: 'close-popup__make-call',
+    });
+  return false;
+})
+
 });
