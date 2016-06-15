@@ -1,3 +1,31 @@
 extends _layout.jade
 block main
-	| Головна
+	.carousel-wrap
+		form.search-block
+			input(type='text' name='search_query' placeholder='Введите артикул').search-input
+			button.search-subm(name='search_subm') Поиск
+		div(class="carousel-main")
+			.item
+				img.slider-content_bg(src='img/slider/christmas.jpg')
+				.slider-content-wrap
+					.slider-content
+						.slider-title-wrap
+							h3.slider-title Коллекция Новый год 2016
+						.slider__content-nav
+							a.link(href='#' alt='Смотреть коллекцию')
+								| Смотреть коллекцию
+						.slider__content_desc
+							p Российский производитель
+							p модной женской одежды оптом
+			.item
+				img.slider-content_bg(src='img/slider/christmas.jpg')
+				.slider-content-wrap
+					.slider-content
+						.slider-title-wrap
+							h3.slider-title Коллекция Новый год 2016
+						.slider__content-nav
+							a.link(href='#' alt='Смотреть коллекцию')
+								| Смотреть коллекцию
+						.slider__content_desc
+							p Российский производитель
+							p модной женской одежды оптом
