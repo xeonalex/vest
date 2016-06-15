@@ -1,0 +1,81 @@
+.site-details{
+	background: url('../img/bg-header_footer.jpg') top center ;
+	position: relative;
+	&:before{
+		z-index: 1;
+		content: '';
+		background: rgba(185, 185, 185, 0.7);
+		display: block;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+	}
+	.container {
+		position: relative;
+		z-index: 2;
+		padding: 20px ;
+		line-height: 0;
+		text-align: justify;
+		@include horiz_align_hack;
+
+	}
+	.contacts,
+	.call-back,
+	.logo-footer{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.contacts{
+		color: #434343;
+	    font-family: 'helveticaneuecyrlight';
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 600;
+		width: 370px;
+		padding: 10px;
+		.line{
+			display: block;
+		}
+	}
+	.call-back{
+		width: 180px;
+		text-align: center;
+		.phone{
+			display: block;
+			color: #434343;
+		    font-family: 'helveticaneuecyrlight';
+		    font-weight: 600;
+		    margin-bottom: 10px;
+		    line-height: 16px;
+		}
+		.take-call{
+			@include border-radius(16px);
+			display: inline-block;
+			text-align: center;
+			padding: 12px;
+			color: #fff;
+			background: #911d33;
+			border: 2px solid #fff;
+			width: 159px;
+		    font-family: 'helveticaneuecyrlight';
+		    font-weight: 600;
+		}
+	}
+}
+
+.site-corp{
+	background: #4a494a;
+	.container {
+		padding: 22px 0;
+
+	}
+	.site-corp__text{
+		text-align: center;
+		color: #fff;
+		font-family: 'helveticaneuecyrthin';
+		font-size: 18px;
+		line-height: 20px;
+	}
+}
