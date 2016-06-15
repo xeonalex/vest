@@ -17,6 +17,7 @@
 		}
 	}
 	.product__gallery_img{
+		cursor: pointer;
 		vertical-align: bottom;
 		display: inline-block;
 		text-align: center;
@@ -55,6 +56,7 @@
 	}
 }
 .product__gallery_preview{
+	cursor: pointer;
 	border: 2px solid #f57558;
 	height: 95px !important;
 	width: 95px !important;
