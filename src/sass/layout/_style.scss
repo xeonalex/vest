@@ -1,0 +1,22 @@
+h1{
+	font-size: 2em;
+
+}
+main{
+		color: $gold;
+}
+@include breakpoint(1024){
+	h1{
+		font-size: .2em;
+	}
+}
+
+.wrapper{
+	min-width: 1200px;
+	position: relative;
+}
+.container {
+	min-width: 1200px;
+	max-width: 1200px;
+	margin: 0 auto !important;
+}
