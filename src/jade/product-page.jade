@@ -7,4 +7,66 @@ block main
 					li.breadcrumbs__item
 						a.breadcrumbs__link(href="#") Главная
 					li.breadcrumbs__item
-						a.breadcrumbs__link.breadcrumbs__link_active(href="#") Новости
+						a.breadcrumbs__link(href="#") Каталог
+					li.breadcrumbs__item
+						a.breadcrumbs__link.breadcrumbs__link_active(href="#") Платье макси с бисером, пряжкой на талии
+			.product__wrap
+				.product__gallery
+					.gallery__wrap
+				.product__content
+					.product__title
+						|Платье макси с бисером, пряжкой на талии
+					.product__price-logo
+						.price-block
+							.price__wrap
+								span.price__value 2 890
+								span.price__text руб.
+							.articul
+								span.articul__text Артикул:
+								span.articul__value 140-01-21
+							.availab
+								span.availab__text В наличии:
+								span.availab__value Есть
+						.logo-block
+							.product-logo__wrap
+								a(href="#").product-logo__link
+									img(src="img/product-logo.png", alt="product-logo")
+					.product__color-size
+						.color-block
+							.color-block__text
+								span.content-text Цвет:
+								span.color-value Оранжевый с Красным
+							.color-block__blocks
+								ul.color-block__list
+									li.color-block__item
+										a(href="#").color-block__link
+											img(src="img/color.png", alt="")
+						.size-block
+							.size-title
+								.size-text
+									span.content-text Размер: 
+									span.size-value 40
+								.size-table
+									a(href="#").size-table__link Таблицы размеров
+							.size-blocks
+								ul.size-blocks__list
+									li.size-blocks__item
+										a(href="#").size-blocks__link 40
+									li.size-blocks__item
+										a(href="#").size-blocks__link 42
+									li.size-blocks__item
+										a(href="#").size-blocks__link 44
+									li.size-blocks__item
+										a(href="#").size-blocks__link 46
+									li.size-blocks__item
+										a(href="#").size-blocks__link 48
+
+					.product__spiner-button
+						.spinner__wrap
+							span.content-text Количество:
+							.spinner
+								label(for='spinner') Select a value:
+								input#spinner(name='value')
+							span.content-text-black шт
+						.button
+							a(href="#").button__link Заказать
