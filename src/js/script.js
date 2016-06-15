@@ -1,4 +1,4 @@
-  $(function() {
+    $(function() {
     $( "#spinner" ).spinner({
       spin: function( event, ui ) {
         if ( ui.value > 10 ) {

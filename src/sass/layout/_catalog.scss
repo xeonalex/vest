@@ -72,6 +72,9 @@
 			@include font-size(18px);
 			font-weight: bold;
 			padding-left: 20px;
+			&:hover{
+				color: $darkred;
+			}
 			&--active{
 				color: $darkred;
 				position: relative;
