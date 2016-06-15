@@ -1,4 +1,3 @@
-
   $(function() {
     $( "#spinner" ).spinner({
       spin: function( event, ui ) {
@@ -45,5 +44,18 @@ $(document).ready(function(){
 	$(".carousel-wrap").css({'visibility': 'visible', 'opacity':'1' });
 
 
-
+//Кнопка вниз
+  var delay = 800; // Задержка прокрутки
+    $('#down-button').click(function () { // При клике по кнопке "Наверх" попадаем в эту функцию
+      /* Плавная прокрутка вниз */
+      $('body, html').animate({
+        scrollTop: 5000
+      }, delay);
+    });
+    $('#up-button').click(function () { // При клике по кнопке "Наверх" попадаем в эту функцию
+      /* Плавная прокрутка наверх */
+      $('body, html').animate({
+        scrollTop: 0
+      }, delay);
+    });
 });

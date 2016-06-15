@@ -1,3 +1,84 @@
 extends _layout.jade
 block main
-	| Каталог
+	section.catalog
+		.container
+			button#down-button
+			button#up-button
+			.catalog__left-side
+				h2.h2
+					| Коллекции
+				ul.catalog__menu-list
+					li.catalog__menu-item
+						a.catalog__menu-link(href="#")
+							| Весна-Лето 2015
+					li.catalog__menu-item
+						a.catalog__menu-link.catalog__menu-link--active(href="#")
+							| Осень-Зима 2015/2016
+					li.catalog__menu-item
+						a.catalog__menu-link(href="#")
+							| Весна-Лето 2016
+			.catalog__right-side
+				.catalog__gallery-wrap
+					.catalog__gallery-item.bigger
+						img(src="img/model-1.jpg", alt="")
+						span.gallery-item-num
+							| Арт. 239FU22
+					.obertka
+						.catalog__gallery-item.small
+							img(src="img/model-2.jpg", alt="")
+							span.gallery-item-num
+								| Арт. 239FU22
+						.catalog__gallery-item.small
+							img(src="img/model-3.jpg", alt="")
+							span.gallery-item-num
+								| Арт. 239FU22
+						.catalog__gallery-item.small
+							img(src="img/model-2.jpg", alt="")
+							span.gallery-item-num
+								| Арт. 239FU22
+						.catalog__gallery-item.small
+							img(src="img/model-3.jpg", alt="")
+							span.gallery-item-num
+								| Арт. 239FU22
+				.catalog__gallery-wrap
+					.catalog__gallery-item.bigger
+						img(src="img/model-1.jpg", alt="")
+						span.gallery-item-num
+							| Арт. 239FU22
+					.obertka
+						.catalog__gallery-item.small
+							img(src="img/model-2.jpg", alt="")
+							span.gallery-item-num
+								| Арт. 239FU22
+						.catalog__gallery-item.small
+							img(src="img/model-3.jpg", alt="")
+							span.gallery-item-num
+								| Арт. 239FU22
+						.catalog__gallery-item.small
+							img(src="img/model-2.jpg", alt="")
+							span.gallery-item-num
+								| Арт. 239FU22
+						.catalog__gallery-item.small
+							img(src="img/model-3.jpg", alt="")
+							span.gallery-item-num
+								| Арт. 239FU22
+				.catalog__gallery-wrap
+					.catalog__gallery-item.bigger
+						img(src="img/model-1.jpg", alt="")
+						span.gallery-item-num
+							| Арт. 239FU22
+					.obertka
+						.catalog__gallery-item.small
+							img(src="img/model-2.jpg", alt="")
+							span.gallery-item-num
+								| Арт. 239FU22
+						.catalog__gallery-item.small
+							img(src="img/model-3.jpg", alt="")
+							span.gallery-item-num
+								| Арт. 239FU22					
+						.catalog__gallery-item.small
+							img(src="img/model-2.jpg", alt="")
+							span.gallery-item-num
+								| Арт. 239FU22
+						.catalog__gallery-item.small
+							img(src="img/model-3.jpg", alt="")

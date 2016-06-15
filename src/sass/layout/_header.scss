@@ -61,6 +61,7 @@
 		.take-call{
 			@include border-radius(16px);
 			display: inline-block;
+			color: $darkred;
 			text-align: center;
 			padding: 12px;
 			background-image: -moz-linear-gradient( 0deg, rgb(202,202,202) 0%, rgb(255,255,255) 77%, rgb(213,213,213) 100%);
