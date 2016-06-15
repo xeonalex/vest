@@ -3,15 +3,17 @@ h1{
 
 }
 main{
-		color: $gold;
 }
 @include breakpoint(1024){
 	h1{
 		font-size: .2em;
 	}
 }
+*{
+	box-sizing: border-box;
+}
 .wrapper{
-	min-width: 1200px;
+	min-width: 1220px;
 	position: relative;
 }
 .container {
