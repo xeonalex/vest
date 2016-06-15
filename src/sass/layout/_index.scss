@@ -1,0 +1,42 @@
+.first-line{
+	background: url('../img/bg-header_footer.jpg') top center no-repeat;
+	padding: 9px;
+	.container {
+	}
+	.slogan{
+		text-align: center;
+		margin: 0 auto;
+		font-size: 20px;
+		line-height: 20px;
+	    font-family: 'helveticaneuecyrlight_italic';
+	    color: #751019;
+	}
+}
+.logo-line{
+	.container {
+		@include clearfix;
+		text-align: center;
+	}
+	.logo {
+		display: inline-block;
+		width: 325px;
+		height: 85px;
+	}
+	.call-back{
+		float: right;
+		.phone{
+
+		}
+		.take-call{
+			@include border-radius(16px);
+			display: inline-block;
+			text-align: center;
+			padding: 12px;
+			background-image: -moz-linear-gradient( 90deg, rgb(202,202,202) 0%, rgb(255,255,255) 77%, rgb(213,213,213) 100%);
+			background-image: -webkit-linear-gradient( 90deg, rgb(202,202,202) 0%, rgb(255,255,255) 77%, rgb(213,213,213) 100%);
+			background-image: -ms-linear-gradient( 90deg, rgb(202,202,202) 0%, rgb(255,255,255) 77%, rgb(213,213,213) 100%);
+			box-shadow: 0px 2px 4px 0px rgba(42, 42, 42, 0.75);
+			width: 159px;
+		}
+	}
+}
