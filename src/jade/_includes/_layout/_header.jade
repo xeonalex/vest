@@ -1,1 +1,20 @@
-header
+header.header
+	.first-line
+		.container
+			.slogan
+				| Модная женская одежда оптом
+	.logo-line
+		.container
+			a(href='/index.html').logo
+				img.logo-img(src='./img/logo.png')
+			.call-back
+				a.phone(href='tel:+78632270773') | +7 (863) 227-07-73
+				a.take-call | Заказать звонок
+	.menu-line
+		.container
+			ul.main-menu
+				-var menu =['О Компании','Новости','Коллекции','Наши магазины','Сотрудничество','Отзывы','Контакты'];
+				-for (var x=1; x<=6; x++)
+					li.main-menu__li
+						a(href='#').main-menu__link
+							| #{menu[x]}
