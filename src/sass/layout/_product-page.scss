@@ -21,6 +21,9 @@
 		display: inline-block;
 		text-align: center;
 		height: 656px;
+		&:focus{
+			outline: 0;
+		}
 		&:before{
 			display: inline-block;
 			content: '';
