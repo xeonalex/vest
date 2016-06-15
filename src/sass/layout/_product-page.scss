@@ -1,0 +1,35 @@
+.breadcrumbs{
+	font-family: 'helveticaneuecyrlight';
+	@include font-size(14px);
+	@include opacity(.7);
+	margin-bottom: 31px;
+	padding-top: 18px;
+}
+.breadcrumbs__list{
+	display: inline-block;
+}
+.breadcrumbs__item{
+	display: inline-block;
+}
+.breadcrumbs__link{
+	&:hover{
+		text-decoration: underline;
+	}
+	&:after{
+		display: block;
+		float: right;
+		@include font-size(9px);
+		content: ">>";
+		margin-left: 9px;
+		margin-right: 5px;
+		margin-top: 4px;
+	}
+	&_active{
+		&:hover{
+			text-decoration: none;
+		}
+		&:after{
+			content: "";
+		}
+	}
+}
