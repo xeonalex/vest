@@ -1,0 +1,28 @@
+// font-family: 'helveticaneuecyrlight';
+// font-family: 'helveticaneuecyrthin';
+.catalog{
+	background: #f6f6f6;
+	min-height: 670px;
+	&__left-side{
+		width: 235px;
+		color: $black;
+		background: #fff;
+		.h2{
+			font-family: 'helveticaneuecyrlight';
+			@include font-size(24px);
+			padding-top: 65px;
+			margin-bottom: 40px;
+		}
+	}
+	&__menu{
+		&-link{
+			font-family: 'helveticaneuecyrthin';
+			@include font-size(20px);
+			font-weight: bold;
+			&--active{
+				color: $red;
+			}
+		}
+	}
+}
+

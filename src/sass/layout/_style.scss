@@ -1,15 +1,3 @@
-h1{
-	font-size: 2em;
-
-}
-main{
-		color: $gold;
-}
-@include breakpoint(1024){
-	h1{
-		font-size: .2em;
-	}
-}
 .wrapper{
 	min-width: 1200px;
 	position: relative;
